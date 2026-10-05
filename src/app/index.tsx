@@ -1,16 +1,20 @@
 import { Text, View, StyleSheet } from "react-native";
 
 export default function Index() {
-  const message: string = "Hello Github Actions";
+  const message: string = "Hello";
 
   return (
-    <View style={styles.container}>
+    <View style={s.container}>
       <Text>{message}</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const s = StyleSheet.create({
+  title: {
+    fontSize:32,
+    fontWeight:"bold"
+  },
   container: {
     flex: 1,
     alignItems: "center",
